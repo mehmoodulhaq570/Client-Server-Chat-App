@@ -41,7 +41,6 @@ public class Client3 {
             String userInput;
             while ((userInput = userInputReader.readLine()) != null) {
                 if (userInput.equals("exit")) {
-                    System.out.println("Connection with server has been terminated");
                     break; // Exit the loop if "exit" command is entered
                 }
 
@@ -65,22 +64,7 @@ public class Client3 {
             System.err.println("Error connecting to the server");
             e.printStackTrace();
         } finally {
-            try {
-                // Close all resources in the finally block
-                if (out != null) {
-                    out.close();
-                }
-                if (userInputReader != null) {
-                    userInputReader.close();
-                }
-                if (socket != null) {
-                    socket.close();
-                }
-            } catch (IOException e) {
-                System.err.println("Error closing resources");
-                e.printStackTrace();
-            }
-            System.out.println("Disconnected from server");
+            System.out.println("----Disconnected from server-----");
         }
     }
 }

@@ -3,7 +3,7 @@
     import java.util.ArrayList;
     import java.util.List;
 
-    public class Server {
+    public class CServer {
         private static final int PORT = 7777;
         private static final List<ClientHandler> clients = new ArrayList<>();
         private static int clientCounter = 1;

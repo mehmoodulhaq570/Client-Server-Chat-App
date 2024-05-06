@@ -1,3 +1,3 @@
 # Client-Server-Chat-App
 
-Hello this is client-server-chat
+Hello this is client-server-chat app
